@@ -9,7 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalaz" %% "scalaz-core" % "7.1.0-M7",
   "com.chuusai" %% "shapeless" % "2.0.0",
   "com.typesafe.slick" % "slick_2.11.0-RC4" % "2.1.0-M1",
-  "com.typesafe.slick" % "slick-testkit_2.11.0-RC4" % "2.1.0-M1" % "test"
+  "com.typesafe.slick" % "slick-testkit_2.11.0-RC4" % "2.1.0-M1" % "test",
+  "org.mariadb.jdbc" % "mariadb-java-client" % "1.1.7"
 )
 
 lazy val root = project.in(file(".")).dependsOn(testSpecs % "test->test")
